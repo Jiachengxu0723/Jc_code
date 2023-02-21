@@ -66,4 +66,4 @@ if __name__ == "__main__":
         zip_dir(dirname)
         count += 1
         print(f'{file} 已压缩')
-
+    print(f'共 {count} 个文件压缩完成')
