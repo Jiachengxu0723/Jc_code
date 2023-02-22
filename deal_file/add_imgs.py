@@ -31,7 +31,7 @@ def zip_dir(dirname):
     z.close()
 
 
-if __name__ == "__main__":
+def main():
     path = './test/'
     imgs_path = './raw_data/'
 
@@ -67,3 +67,6 @@ if __name__ == "__main__":
         count += 1
         print(f'{file} 已压缩')
     print(f'共 {count} 个文件压缩完成')
+
+if __name__ == "__main__":
+    main()
