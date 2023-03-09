@@ -27,7 +27,7 @@ def cut_audio(audio_file, step=1000):
             os.makedirs('./cut_data')
         label = os.path.basename(audio_file).split('.')[0]
         if 'cheer' in label:
-            cut_data = f"./cut_data/cheer/{label}_{str(int(stop_time / 1000)).zfill(4)}.wav"
+            cut_data = f"./cut_data/{label}_{str(int(stop_time / 1000)).zfill(4)}.wav"
         else:
             cut_data = f"./cut_data/{label}_{str(int(stop_time / 1000)).zfill(4)}.wav"
         if not os.path.exists(cut_data):
@@ -46,15 +46,14 @@ def get_total_duration():
 
 
 if __name__ == '__main__':
-    audio_path = './filter_data'
-    cut_data_path = './cut_data/cheer'
+    audio_path = '/home/synsense/视频/baby_cry_20230306/filter_data'
+    cut_data_path = '/home/synsense/视频/baby_cry_20230306/cut_data'
 
     audio_files = get_file_list(audio_path)
     for audio_file in audio_files:
         cut_audio(audio_file)
-
-    '''音频总时长'''
-    get_total_duration()
+    # '''音频总时长'''
+    # get_total_duration()
 
 
 
