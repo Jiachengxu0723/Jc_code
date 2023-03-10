@@ -6,6 +6,7 @@ import os
 环境：
     python==3.7.0
     oepncv-python==4.7.0.72
+    face_detector==1.3.0
 操作：
     任意键切换下一张，q键退出
 '''
