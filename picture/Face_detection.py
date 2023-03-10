@@ -1,5 +1,6 @@
 import cv2
 import os
+import face_recognition
 
 '''
 将文件夹里的所有图片展示，框出里面的人脸
@@ -54,8 +55,6 @@ def main():
                 #摧毁窗口
                 cv2.destroyAllWindows()
 
-
-    pass
 
 if __name__ == '__main__':
     #图片文件夹

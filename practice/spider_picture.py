@@ -54,7 +54,6 @@ def getmoreurl(num, word):
     return ur
 
 def main():
-
     n = int(input('输入想下载多少张图片(n*50)：'))
     word = input('输入想下载的图片:')
     # 初始页面url

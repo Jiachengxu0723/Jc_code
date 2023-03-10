@@ -25,11 +25,7 @@ headers = format_headers(header)
 #headers = header全路径
 
 def get_image(url):
-	"""
-	获取图片列表并下载
-	:param url:
-	:return:
-	"""
+
 	# 获取接口的图片列表信息res
 	res = requests.get(url, headers=headers)
 	''' 
