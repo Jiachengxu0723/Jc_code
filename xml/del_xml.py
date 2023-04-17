@@ -18,7 +18,6 @@ def get_file_list(directory, types , is_sort = True)->list:
         file_list.sort()
     return file_list
 
-
 def del_xml_outside1(root,tree,files):
     '''
         删除xml文件里帧数单独不连续且outside="1的节点，并打印其帧数
@@ -45,7 +44,6 @@ def del_xml_outside1(root,tree,files):
         print('无修改操作')
     print('-----**************-----')
 
-
 def connect_xml_label(root,tree,files):
     tracks_info = root.findall("track")
     list_id_frames=[]
@@ -65,7 +63,6 @@ def connect_xml_label(root,tree,files):
         if dic_id_frames[number][1] == dic_id_frames[number][0]:
             print(dic_id_frames[number][0])
 
-
 def main():
     #读取目录中所有非隐藏的xml文件，返回其路径列表
     file_list = get_file_list(directory='/home/synsense/下载/c001_001 (1)',types=['.xml'])
@@ -74,9 +71,7 @@ def main():
         root = tree.getroot()
         #删除xml文件里帧数单独不连续且outside="1的节点，并打印其帧数
         del_xml_outside1(root,tree,files)
-        #
         connect_xml_label(root,tree,files)
-
 
 if __name__ == '__main__':
     main()
