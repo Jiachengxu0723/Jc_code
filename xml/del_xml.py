@@ -21,8 +21,6 @@ def get_file_list(directory, types , is_sort = True)->list:
 def del_xml_outside1(root,tree,files):
     '''
         删除xml文件里帧数单独不连续且outside="1的节点，并打印其帧数
-        Args:
-
     '''
 
     tracks_info = root.findall("track")
