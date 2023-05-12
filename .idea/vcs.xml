@@ -6,6 +6,14 @@
     <mapping directory="$PROJECT_DIR$/homework/20220715" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/homework/exercise_in_team" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/homework/exercise_in_team/individual_exercises/Jc/20220715" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/homework/learn_git/homework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/homework/learn_git/teat6" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/homework/learn_git/test1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/homework/learn_git/test2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/homework/learn_git/test3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/homework/learn_git/test4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/homework/learn_git/test5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/homework/learn_git/test6" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/xml/XML_files_in_Python" vcs="Git" />
   </component>
 </project>
