@@ -36,8 +36,7 @@ def main():
     filename = parse_filename(file_list)
 
 if __name__ == '__main__':
-
-
+    main()
 
 
 
