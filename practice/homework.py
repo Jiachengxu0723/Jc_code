@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import random
+
 def Guessing_game():
     print('猜谜游戏，您有10次机会')
     answer = random.randint(1,100)
