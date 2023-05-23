@@ -1,14 +1,15 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import random
 def Guessing_game():
     print('猜谜游戏，您有10次机会')
-    answer = 666
+    answer = random.randint(1,100)
     a = 0
-    b = 1000
+    b = 100
     count = 0
     while count<10:
         try:
-            num = input('请输入一个0-1000的整数:')
+            num = input('请输入一个0-100的整数:')
             num = eval(num)
 
             if type(num)in [float]:
@@ -116,12 +117,11 @@ def write_txt():
             file.write(str(num) + '\n')
         print('write success')
 
-
-
-#write_txt()
-Guessing_game()
-#Calculate_BMI()
-#read_txt()
+if __name__ == '__main__':
+    #write_txt()
+    Guessing_game()
+    #Calculate_BMI()
+    #read_txt()
 
 
 
