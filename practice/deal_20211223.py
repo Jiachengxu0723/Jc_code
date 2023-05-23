@@ -1,6 +1,5 @@
 import os
 
-
 '''
 读取给出的路径、后缀
 返回一个列表包含相应的后缀文件的全路径
@@ -14,7 +13,6 @@ def get_file_list(directory, types, is_sort = True):
     if is_sort:
         file_list.sort()
     return file_list
-
 
 '''
 输入文件路径，返回姓名，光照，位置，类型
@@ -33,11 +31,12 @@ def filter_by_attributes(filename, lights = ['l01'], positions=[], names=[], lab
             return False
         else:print('1')
 
-if __name__ == '__main__':
-    directory = ('../20211223')
-    types = ['.bin']
-    file_list = get_file_list(directory, types)
+def main():
+    file_list = get_file_list(directory='../20211223', types=['.bin'])
     filename = parse_filename(file_list)
+
+if __name__ == '__main__':
+
 
 
 

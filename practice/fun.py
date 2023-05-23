@@ -12,7 +12,7 @@ def is_leap():
         else:
             return True,'请输入正确的年份'
 
-if __name__ == '__main__':
+def main():
     print('输入一个年份，按「Enter」来判断是不是润年份,按「q」退出判断')
     while True:
         flag, msg = is_leap()
@@ -21,3 +21,6 @@ if __name__ == '__main__':
         else:
             print(msg)
             break
+
+if __name__ == '__main__':
+    main()

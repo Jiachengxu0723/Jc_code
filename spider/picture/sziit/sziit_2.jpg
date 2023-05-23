@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Error>
-  <Code>NoSuchKey</Code>
-  <Message>The specified key does not exist.</Message>
-  <RequestId>645DE2B8823A793434968C1A</RequestId>
-  <HostId>zcool.oss-cn-beijing.aliyuncs.com</HostId>
-  <Key>community/01e2e45c4c0075a801213f268cd6d9.jpg</Key>
-  <EC>0040-00000024</EC>
-</Error>
