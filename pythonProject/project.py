@@ -4,13 +4,11 @@ import os
 from tqdm import tqdm
 import time
 
-
 class process_image():
     def __init__(self,img_path,out_path):
         # self.number = number
         self.img_path = img_path
         self.out_path = out_path
-
 
     def change_img(self, num):
         # 加载原图，将图像转化为数组数据
@@ -58,12 +56,8 @@ class process_image():
         # im.save(os.path.join(self.out_path,img_file))
         im.save(os.path.join(self.out_path, str(num) + '.jpg'))
 
-
-
     def save_img(self, num):
         self.change_img(num)
-
-
 
 if __name__ == '__main__':
     img_path = ('/home/synsense/下载/pic/background.jpg')
@@ -74,4 +68,3 @@ if __name__ == '__main__':
         image_path = os.path.join(img_path, img)
         p = process_image(image_path, out_path)
         p.save_img(i)
-

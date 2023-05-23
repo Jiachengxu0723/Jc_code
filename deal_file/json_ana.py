@@ -51,12 +51,10 @@ class Json_Analysis():
         os.mkdir(self.dest_path2)
         os.mkdir(self.dest_json_path2)
 
-
     # 分析json文件的shapes的列表长度
     def json_analysis_length(self):
         data=json.load(open(self.json_path))
         return len(data['shapes'])
-
 
     def batch_analysis(self):
         jsonlist = os.listdir(self.json_path)

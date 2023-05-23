@@ -12,12 +12,8 @@ os.makedirs(out_path,exist_ok=True)
 
 img_list = os.listdir(img_path)
 for i in range(len(img_list)):
-    # print(img_list)
     file_path =(os.path.join(img_path,img_list[i]))
-
-
     image_list = os.listdir(image_path)
-    # print(image_list)
 
     n = 0
     for j in range(len(image_list)):

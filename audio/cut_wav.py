@@ -15,7 +15,6 @@ def get_file_list(directory, types = ['.wav'], is_sort = True):
         file_list.sort()
     return file_list
 
-
 def cut_audio(audio_file, step=1000):
     audio = AudioSegment.from_wav(audio_file)
     length = len(audio)
@@ -34,7 +33,6 @@ def cut_audio(audio_file, step=1000):
             audio_chunk.export(cut_data, format="wav")
         start_time = stop_time
 
-
 def get_total_duration():
     cut_files = get_file_list(cut_data_path,types='.wav')
     total_duration = 0
@@ -43,7 +41,6 @@ def get_total_duration():
         audio_duration = audio.duration_seconds
         total_duration = total_duration + audio_duration
     print(total_duration)
-
 
 if __name__ == '__main__':
     audio_path = '/home/synsense/视频/baby_cry_20230306/filter_data'

@@ -9,7 +9,7 @@ def test(img,out,num):
 if __name__ == '__main__':
     img = (r'C:\\Users\\Administrator\\Desktop\\picture2')
     out = (r'C:\\Users\\Administrator\\Desktop\\outpath')
-    p.test()
+    test()
 
 
 
