@@ -79,8 +79,6 @@ def Calculate_BMI():
 
     # 展示图片
     plt.show()
-
-
     print('———————————————————————————————————————————')
 
 def read_txt():
@@ -118,11 +116,18 @@ def write_txt():
             file.write(str(num) + '\n')
         print('write success')
 
+def main():
+    print('1 猜谜游戏 \n' + '2 BMI计算')
+    User_input = input('请输入要用的功能编号:')
+    if User_input == '1':
+        Guessing_game()
+    elif User_input == '2':
+        Calculate_BMI()
+    else:
+        print('编号有误')
+
 if __name__ == '__main__':
-    #write_txt()
-    Guessing_game()
-    #Calculate_BMI()
-    #read_txt()
+    main()
 
 
 
