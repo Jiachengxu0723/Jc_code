@@ -1,16 +1,13 @@
 import os
 import shutil
 
-
 def get_txt(path, types='.txt'):
     file_list = []
-
     for roots, dirs, files in os.walk(path):
         for file in files:
             suffix = os.path.splitext(file)[-1]
             if types == suffix:
                 file_list.append(os.path.join(roots, file))
-
     return sorted(file_list)
 
 def load_data(path):

@@ -9,8 +9,6 @@ class files():
         f = fd(self.file_path, self.save_path)
         f.file_move()
 
-
-
 if __name__ == '__main__':
     file_path = (r'C:/Users/Administrator/Desktop/picture2')
     save_path = (r'C:/Users/Administrator/Desktop/save_path')

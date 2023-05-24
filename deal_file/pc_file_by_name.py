@@ -7,10 +7,6 @@ def file_pc(file_path,json_path):
         files = file_list[i].split('@')
         print(files)
 
-
-
-
-
 if __name__ == '__main__':
     #617
     file_path = ('C:\\Users\\byb\Desktop\\tunnel\\TestAccNew23-36-26Num5\\warpCriMask')
