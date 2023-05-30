@@ -1,7 +1,5 @@
 import os
 
-DIR = 'videos'
-
 def get_clean_fn(fn:str)->str:
     fn, ext = os.path.splitext(fn)
     return fn
@@ -21,4 +19,5 @@ def run():
         print(fns_parsed)
 
 if __name__ == "__main__":
+    DIR = 'videos'
     run()

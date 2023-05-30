@@ -9,7 +9,6 @@ def getHTMLText(url):
         r.raise_for_status()
         r.encoding = r.apparent_encoding
         return r.text
-
     except:
         return ''
 
@@ -20,6 +19,7 @@ def parserHTML(html):
     reg = re.compile(pattern)
     urls = re.findall(reg, html)
     return urls
+
 
 # 下载图片
 def download(List):
@@ -43,6 +43,7 @@ def download(List):
         except:
             continue
 
+
 # 通过Requests URL请求到更多的url源码页面
 def getmoreurl(num, word):
     ur = []
@@ -52,6 +53,7 @@ def getmoreurl(num, word):
         u = url.format(word=word, pn=x)
         ur.append(u)
     return ur
+
 
 def main():
     n = int(input('输入想下载多少张图片(n*50)：'))
@@ -65,6 +67,7 @@ def main():
 
     #每张图的地址
     urls = parserHTML(html)
+
     #下载图片
     download(urls)
 

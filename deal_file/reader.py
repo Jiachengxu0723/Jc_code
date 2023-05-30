@@ -4,7 +4,8 @@ from tqdm import tqdm
 import time
 
 '''
-requirement:遍历文件夹下的所有文件并判断是否为excel文件，如果是则打印出其中“事件类型_时长”sheet中“文件名”和“时长记录”列的内容
+requirement:遍历文件夹下的所有文件并判断是否为excel文件，
+如果是则打印出其中“事件类型_时长”sheet中“文件名”和“时长记录”列的内容
 parameter：dirPath-需要的文件夹路径，save_path-保存路径
 '''
 class read_file():

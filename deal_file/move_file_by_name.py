@@ -5,9 +5,6 @@ import time
 
 
 class move_file_by_name():
-
-
-
     def __init__(self,video_path,txt_path,save_path):
         self.video_path = video_path
         self.save_path = save_path
@@ -20,8 +17,6 @@ class move_file_by_name():
                 #读取txt内容
                 data = f.readlines()
         print(data[0])
-
-
         #file_name（视频文件名）
         for i, file_name in enumerate(video_list):
             #获取视频全路径

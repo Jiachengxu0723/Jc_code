@@ -4,7 +4,6 @@ import shutil
 def Get_files_path():
     for model in ['noise','silent']:
         path = '/home/synsense/Downloads/20220705/cut_data/' + model
-
         file_list = os.listdir(path)
         for i in range(len(file_list)):
             file_path = os.path.join(path,file_list[i])
