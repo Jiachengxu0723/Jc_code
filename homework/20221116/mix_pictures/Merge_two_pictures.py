@@ -1,6 +1,7 @@
 # -*-coding:utf-8-*-
 from PIL import Image
 
+
 # 白色背景图片背景透明化
 def transPNG(srcImageName):
     img = Image.open(srcImageName)
@@ -15,6 +16,7 @@ def transPNG(srcImageName):
     img.putdata(newData)
     return img
 
+
 # 图片融合
 def mix(file,mark,coordinator=(570, 640)):
     #new : 这个函数创建一幅给定模式（mode）和尺寸（size）的图片。如果省略 color 参数，则创建的图片被黑色填充满，如果 color 参数是 None 值，则图片还没初始化。
@@ -26,11 +28,13 @@ def mix(file,mark,coordinator=(570, 640)):
     out.show()
     out.save('mix.jpg')
 
+
 def main():
     file = Image.open('background.jpeg')
     verse = ('cup.jpeg')
     verse = transPNG(verse)
     file = mix(file, verse)
+
 
 if __name__ == '__main__':
     main()
