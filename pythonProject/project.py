@@ -51,7 +51,7 @@ class process_image():
         # for i in range(len(img_list)):
         #     img_file = os.path.join(self.img_path, img_list[i])
 
-        for i in tqdm(range(1), desc='图片处理中', ncols=60):
+        for i in tqdm(range(1), desc='图片处理中', ncols=60,unit='files'):
             time.sleep(0.5)
         # im.save(os.path.join(self.out_path,img_file))
         im.save(os.path.join(self.out_path, str(num) + '.jpg'))
@@ -59,12 +59,34 @@ class process_image():
     def save_img(self, num):
         self.change_img(num)
 
-if __name__ == '__main__':
-    img_path = ('/home/synsense/下载/pic/background.jpg')
-    out_path = ('/home/synsense/下载/outpath')
-    os.makedirs(out_path,exist_ok=True)
+def get_file_list(directory, types , is_sort = True):
+    r"""
+    Get the list of all files names with certain types in a directory
+    Args:
+        directory(string): the directory that contains all files
+        types(List[str]):
+        is_sort:
+    Returns:
+        file_list(List[str]): List of all the required files
+    """
+    file_list = []
+    for path, dirs, files in os.walk(directory):
+        for file in files:
+            if os.path.splitext(file)[1] in types:
+                file_list.append(os.path.join(path, file))
+    if is_sort:
+        file_list.sort()
+    return file_list
+
+def main(img_path):
     files = os.listdir(img_path)
     for i, img in enumerate(files):
         image_path = os.path.join(img_path, img)
-        p = process_image(image_path, out_path)
+        p = process_image(image_path, img_path)
         p.save_img(i)
+
+
+if __name__ == '__main__':
+    img_path = ('/home/synsense/图片')
+    main(img_path)
+

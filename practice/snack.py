@@ -117,7 +117,7 @@ while quit:
     # 计算机处理
     pygame.display.flip()
     # 设置帧率
-    clock.tick(9)
+    clock.tick(10)
 else:
     if score < 50:
         # 打印分数
