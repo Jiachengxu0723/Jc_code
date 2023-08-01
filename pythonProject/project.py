@@ -80,10 +80,10 @@ def get_file_list(directory, types , is_sort = True):
 
 def main(img_path):
     files = os.listdir(img_path)
-    for i, img in enumerate(files):
+    for num, img in enumerate(files):
         image_path = os.path.join(img_path, img)
         p = process_image(image_path, img_path)
-        p.save_img(i)
+        p.save_img(num)
 
 
 if __name__ == '__main__':
